@@ -1,0 +1,20 @@
+//palindrom number
+#include<Stdio.h>
+int main(){
+int x; int y=0; int rev=0; int rem;
+printf("Enter the number");
+scanf("%d",&x);
+y=x;
+while(x>0){
+     rem=x%10;
+     rev=rev*10+rem;
+     x=x/10;
+}
+if(rev==y){
+      printf("Palindrome");
+}
+else if(rev!=y){
+      printf("Not Palindrome");
+}
+return 0;
+}
